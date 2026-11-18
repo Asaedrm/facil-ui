@@ -1,0 +1,21 @@
+{
+  "name": "facil-ui",
+  "module": "index.ts",
+  "type": "module",
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "typecheck": "bun check",
+    "build:react": "bun run --filter @facil-ui/react build",
+    "build:angular": "bun run --filter @facil-ui/angular build",
+    "build": "bun run build:react && bun run build:angular",
+    "docs:dev": "bun run --filter @facil-ui/docs dev",
+    "docs:build": "bun run --filter @facil-ui/docs build"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "typescript": "~6.0.0"
+  }
+}

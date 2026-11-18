@@ -1,0 +1,42 @@
+---
+title: Installation (Angular)
+description: How to install and configure @facil-ui/angular in your Angular application.
+---
+
+# Installation
+
+Install the `@facil-ui/angular` package in your Angular application:
+
+```bash
+bun add @facil-ui/angular
+```
+
+Or using npm / pnpm / yarn:
+
+```bash
+npm install @facil-ui/angular
+```
+
+## Prerequisites
+
+- Angular 22 or higher
+- TypeScript 5 or higher
+
+## Basic Usage
+
+Import the standalone component into your component or module:
+
+```typescript
+import { Component } from '@angular/core';
+import { FacilButtonComponent } from '@facil-ui/angular';
+
+@Component({
+  selector: 'app-root',
+  standalone: true,
+  imports: [FacilButtonComponent],
+  template: `
+    <facil-button variant="primary">Save</facil-button>
+  `,
+})
+export class AppComponent {}
+```

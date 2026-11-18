@@ -1,0 +1,43 @@
+---
+title: Button (Angular)
+description: Componente de botón standalone accesible para aplicaciones Angular.
+---
+
+# Button
+
+El componente `facil-button` permite ejecutar acciones y disparar eventos dentro de aplicaciones Angular.
+
+## Importación
+
+```typescript
+import { FacilButtonComponent } from '@facil-ui/angular';
+
+@Component({
+  standalone: true,
+  imports: [FacilButtonComponent],
+  template: `...`,
+})
+export class MyComponent {}
+```
+
+## Variantes
+
+```html
+<facil-button variant="primary">Primario</facil-button>
+<facil-button variant="secondary">Secundario</facil-button>
+<facil-button variant="outline">Contorno</facil-button>
+<facil-button variant="ghost">Fantasma</facil-button>
+```
+
+## Tamaños
+
+```html
+<facil-button size="sm">Pequeño</facil-button>
+<facil-button size="md">Mediano</facil-button>
+<facil-button size="lg">Grande</facil-button>
+```
+
+## Probar en Storybook
+
+Puedes probar todas las variantes, estados y propiedades interactivamente en:
+[Abrir Button en Storybook Angular](http://localhost:6007)
