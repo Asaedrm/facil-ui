@@ -9,6 +9,8 @@
   "scripts": {
     "typecheck": "bun check",
     "build:react": "bun run --filter @facil-ui/react build",
+    "storybook:react": "bun run --filter @facil-ui/react storybook",
+    "storybook:angular": "bun run --filter @facil-ui/angular storybook",
     "build:angular": "bun run --filter @facil-ui/angular build",
     "build": "bun run build:react && bun run build:angular",
     "docs:dev": "bun run --filter @facil-ui/docs dev",
